@@ -1,9 +1,11 @@
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live Site: [Book Self](https://github.com/facebook/create-react-app).
 
-## Technologies
+## Procedure
 ***
-A list of technologies used within the project:
-* [Technology name](https://example.com): Version 12.3 
-* [Technology name](https://example.com): Version 2.34
-* [Library name](https://example.com): Version 1234
+*  first creating home page  
+*  then fetch data from book . json
+*  show data in the  Home page but only three
+*  show rest data in review page
+*  creating a dashboard where 2 charts are shown
+*  creating a blog page where two question answered
