@@ -28,7 +28,7 @@ nav a:hover{
 } */
 
 /* body{
-	background: #1E1F25;
+	background: #D1D8EC;
 } */
 nav{
     margin-top: 20px;
@@ -45,6 +45,7 @@ nav{
 	/* justify-content: space-between; */
 	/* text-align: center; */
 }
+/*
 a{
 	padding: 1rem 2rem 1.15rem;
     text-transform: uppercase;
@@ -66,7 +67,7 @@ a:hover {
     font-weight: bold;
 }
 
-  a:active {
+a:active {
     transform: translateY(4px);
   }
 
@@ -88,4 +89,43 @@ a:hover {
       -webkit-transform: scale(1, 1);
     }
   }
-  
+  */
+
+
+
+  a{
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+      
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 50px 13px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    font-weight: bold;
+    font-size:x-large;
+    
+}
+a::after{
+    content: "";
+    background-color: #ef816c;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;  
+    
+}
+a:hover::after{
+    top: 0px;
+    left: 0px;
+}

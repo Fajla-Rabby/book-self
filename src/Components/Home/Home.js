@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import useReview from '../Hooks/useReview';
 import Review from '../Review/Review';
 import "./Home.css";
@@ -23,12 +24,15 @@ const Home = () => {
                     reviews.slice(0, 3).map(review => <Review
                     key={review.id}
                     review={review}
-                    button
+                    
                     ></Review>)
                 }
                  
            </div>
-           <button>Show More</button> 
+           {/* <button className='btn'>Show More</button>  */}
+           <div className='show-more'>
+           <Link  to="/review">Show More</Link>
+           </div>
         </div>
     );
 };
