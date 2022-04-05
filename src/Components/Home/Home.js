@@ -7,32 +7,36 @@ import "./Home.css";
 const Home = () => {
     const [reviews, setReviews] = useReview();
     return (
+
         <div>
-           <div className='main-container'>
+
+            <div className='main-container'>
                 <section className='heading'>
-                    <h1>Your Next Book</h1> 
-                    <h1>Your Best Book</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus necessitatibus corporis, aliquid totam consequatur velit magnam at ad libero nemo possimus, autem atque iste est.</p>
+                    <h2>Book Self</h2>
+                    <h5>Your Next Book</h5>
+                    <h5>Your Best Book</h5>
+                    <p>With over 25 million books. Browse through variety of genres such as Fiction, Self help, Children's books, School textbooks, Higher education textbooks, and much more.
+                        Explore Editor's corner, Exam Central, Indian Language Books, New Releases & Best sellers .</p>
                     <button className='btn'>Live Demo</button>
                 </section>
                 <section className='image'>
-                        <img src="../../../images/books.jpg" alt="" />
+                    <img src="../../../images/books.jpg" alt="" />
                 </section>
-           </div>
-           <div className='review-container'>
+            </div>
+            <div className='review-container'>
                 {
                     reviews.slice(0, 3).map(review => <Review
-                    key={review.id}
-                    review={review}
-                    
+                        key={review.id}
+                        review={review}
+
                     ></Review>)
                 }
-                 
-           </div>
-           {/* <button className='btn'>Show More</button>  */}
-           <div className='show-more'>
-           <Link  to="/review">Show More</Link>
-           </div>
+
+            </div>
+            {/* <button className='btn'>Show More</button>  */}
+            <div className='show-more'>
+                <Link to="/review">Show More</Link>
+            </div>
         </div>
     );
 };
